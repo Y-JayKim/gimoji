@@ -1,0 +1,33 @@
+#menu{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:30px;
+    border:2px black solid;
+}
+
+#adv{
+    position: absolute;
+    left:0px;
+    top:30px;
+    width:100%;
+    height:50px;
+    border:2px black solid;
+}
+
+#main{
+    position:absolute;
+    left:0px;
+    top:80px;
+    width:100%;
+    height:auto;
+    border:2px black solid;
+}
+
+#footer{
+    position: relative;
+    width:100%;
+    height:50px;
+    left:0px;
+}
