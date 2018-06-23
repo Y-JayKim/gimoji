@@ -3,9 +3,10 @@
     <head>
         <link href="register.css" rel="stylesheet" type="text/css" />
         <title>Register</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
     <body>
-        <img id='logo' />
+        <img id='logo' src="logo.png"/>
         <div id="infoSection">
             <div id="greet">Create your Gimoji Account!</div>
             <form action="/register" method="POST">
@@ -31,7 +32,7 @@
                     <input class="infoInputClass"  placeholder="Email Address" name="email" />
                 </div>
                 <div id="type" class="infoDivSection">
-                    <select name="type">
+                    <select id="typeSelection" name="type">
                         <option value="user">User</option>
                         <option value="merchant">Merchant</option>
                         <option value="employee">Employee</option>

@@ -3,19 +3,51 @@
     <head>
         <link href="main.css" rel="stylesheet" type="text/css" />       
         <title>Main</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <style>
+            #logo{
+                position: absolute;
+                left:0px;
+                width:120px;
+            }
+            
+            #recommendation{
+                position: absolute;
+                left:0px;
+                top:0px;
+                width:400px;
+                height:600px;
+                border:2px solid;
+            }
+            #category{
+                position: absolute;
+                left:400px;
+                top:0px;
+                width:calc(100% - 400px);
+                height:100%;
+                border:2px solid;
+            }
+        </style>
     </head>
     <body>
         <div id="menu">
-            <img id="logo" />
+            <img id="logo" src="logo.png" />
+            <div id="menu1" class="menus">Menu1</div>
+            <div id="menu2" class="menus">Menu2</div>
+            <div id="menu3" class="menus">Menu3</div>
             <div id="sign">
-                <button id="signButton">Sign In</button>
+                Hi! Sign In.<br>Your Account
             </div>
         </div>
         <div id="adv">
             <!--Will be deleted-->
-            <img id="temp_img" />
+            Advertisement
+            <img id="advertisementImg" />
         </div>
-        <div id="main"></div>
+        <div id="main">
+            <div id="recommendation"></div>
+            <div id="category"></div>
+        </div>
         <script src="main.js"></script>
     </body>
 </html>

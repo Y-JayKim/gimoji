@@ -3,17 +3,34 @@
     <head>
         <link href="sign.css" rel="stylesheet" type="text/css" />       
         <title>Sign In</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
     <body>
-        <img id='logo' />
+        <img id='logo' src="logo.png" />
         <div id="main">
-            <i>Register</i>
-            <input id="username" />
-            <input type="password" id="password" />
+            <div id="greet">Sign In</div>
+            <div id="usernameDiv"> 
+                <input id="username" placeholder="Username"/>
+            </div>
+            <div id="passwordDiv">
+                <input type="password" id="password" placeholder="Password"/>
+            </div>
+            
             <div id="forget">Forgot your password?</div>
-            <div id="register">register</div>
+            <div id="register">Create account</div>
             <button id="submit">Sign In</button>
         </div>
         <script src="sign.js"></script>
+        <script>
+            document.getElementById("submit").addEventListener('click',()=>{
+                swal("Sign In Button is clicked!");
+            });
+            
+            document.getElementById("forget").addEventListener('click',()=>{
+                swal("forget Button is clicked!");
+            });
+            
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </body>
 </html>
