@@ -6,7 +6,9 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
     <body>
-        <img id='logo' src="logo.png"/>
+        <div id="logoDiv">
+            <img id='logo' src="logo.png"/>
+        </div>
         <div id="infoSection">
             <div id="greet">Create your Gimoji Account!</div>
             <form action="/register" method="POST">
@@ -36,12 +38,14 @@
                         <option value="user">User</option>
                         <option value="merchant">Merchant</option>
                         <option value="employee">Employee</option>
-                    </select>
+                    </select> 
                 </div>
+                <div id="help">help</div>
                 <button type="submit" id="submit" name="submit">Submit</button>
                 <button type="submit" id="cancel" name="cancel">Cancel</button>
             </form>
         </div>
         <script src="register.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </body>
 </html>
